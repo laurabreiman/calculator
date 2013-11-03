@@ -1,16 +1,22 @@
 <html>
     <head>
+        <!-- This is the title -->
         <title>
-            Calculator
+            Calculator 
         </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>
-            function clickHandler(){
-                console.log("click!");
+            function clickHandler(){ 
+                var whatsInside = $("#text").val();
+                var whatsInsideUp = whatsInside.toUpperCase();
+                console.log(whatsInsideUp); //This prints the value of the textbox
             }
         </script>
+        
     </head>
     
     <body>
+        <input type="text" id="text" size="50px" maxlength="10">
         <p><button onclick="clickHandler()">Calculate</button></p>
     </body>
     
